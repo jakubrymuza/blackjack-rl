@@ -1,0 +1,23 @@
+include: [../train.yaml]
+session:
+  rounds: 10
+training:
+  seeds: [11]
+  total_timesteps: 1024
+  n_envs: 2
+  n_steps: 64
+  batch_size: 64
+  n_epochs: 2
+  hidden_sizes: [32, 32]
+  eval_interval: 512
+  checkpoint_interval: 512
+evaluation:
+  sessions: 30
+  validation_sessions: 10
+  trace_sessions: 30
+  validation_trace_sessions: 2
+  bootstrap_resamples: 100
+plots:
+  minimum_cell_samples: 1
+telemetry:
+  training_trace_every_sessions: 1

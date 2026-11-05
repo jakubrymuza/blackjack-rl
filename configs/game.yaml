@@ -1,0 +1,40 @@
+money:
+  minor_units_per_dollar: 100
+  initial_bankroll_minor: 10000
+  minimum_bet_minor: 1000
+  bet_increment_minor: 1000
+session:
+  rounds: 100
+rules:
+  blackjack_total: 21
+  dealer_stand_total: 17
+  dealer_hits_soft_17: false
+  natural_card_count: 2
+  blackjack_profit_numerator: 3
+  blackjack_profit_denominator: 2
+  ordinary_win_profit_multiplier: 1
+  double_stake_multiplier: 2
+  double_draw_count: 1
+  double_on_initial_hand_only: true
+  dealer_peeks_for_blackjack: true
+  allow_split: false
+  allow_surrender: false
+  allow_insurance: false
+  reveal_hole_after_player_bust: false
+shoe:
+  decks: 6
+  suits_per_rank: 4
+  ranks: [A, '2', '3', '4', '5', '6', '7', '8', '9', '10', J, Q, K]
+  low_values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+  ace_high_value: 11
+  penetration_fraction: 0.75
+  hilo_weights: [-1, 1, 1, 1, 1, 1, 0, 0, 0, -1, -1, -1, -1]
+  true_count_denominator_floor_decks: 0.25
+betting:
+  minimum_bet_multiples: [1, 2, 3, 4, 5, 10, 20]
+  bankroll_fractions: [0.1, 0.2, 0.3, 0.5, 0.75, 1.0]
+features:
+  counting: full
+  running_count_scale: 24.0
+  true_count_scale: 10.0
+  control: joint

@@ -1,0 +1,4 @@
+reward:
+  ruin_weight: 10.0
+  shortfall_weight: 2.0
+  negative_cash_weight: 10.0

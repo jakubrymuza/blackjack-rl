@@ -49,6 +49,7 @@ coverage.xml
 *.py.cover
 *.lcov
 .hypothesis/
+.test-runs/
 .pytest_cache/
 cover/
 
@@ -218,3 +219,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Reproducible generated experiment artifacts
+runs/
+.hypothesis/

@@ -1,0 +1,19 @@
+plots:
+  histogram_bins: 40
+  scatter_sample: 5000
+  minimum_cell_samples: 10
+  smoothing_window: 20
+  count_bin_width: 1.0
+  penetration_bin_width: 0.1
+  bankroll_bin_width: 0.25
+  horizon_bin_width: 10
+  bet_bin_width: 1.0
+  figure_width: 11
+  figure_height: 6
+  dpi: 140
+  static_formats: [png, svg, pdf]
+telemetry:
+  schema_version: 1
+  artifact_id_characters: 12
+  flush_rows: 2000
+  training_trace_every_sessions: 100

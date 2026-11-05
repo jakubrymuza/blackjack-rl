@@ -1,0 +1,4 @@
+include: [../train.yaml]
+training:
+  seeds: [11]
+  total_timesteps: 1000000
